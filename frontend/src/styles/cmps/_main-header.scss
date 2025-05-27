@@ -1,0 +1,62 @@
+.main-header {
+    #headerScroll{
+        height: 0;
+    }
+    #navScroll{
+        height: 0;
+        position: relative;
+        top: 100px;
+    }
+    .home{
+        position: fixed;
+        z-index: 200;
+        width: 100%;
+        border: none;
+        header{
+            color: $text_logo_color_light;
+        }
+        .nav-header{
+            display: none;
+        }
+        form {
+            display: none;
+        }
+        &.header-scrolling {
+            background-color: #fff;
+            header{
+                color: $text_logo_color_dark;
+                border-bottom: $border-package-1;
+            }
+        } 
+        &.nav-scrolling {
+            .nav-header{
+                display: grid;
+                background-color: #fff;
+            }
+            form{
+                display: flex;
+            }
+        }
+    }
+    .not-home{
+        position:relative;
+        header {
+            border-bottom: $border-package-1;
+        }
+    }
+    .nav-header {
+        height: 40px;
+        border-bottom: $border-package-1;
+        a{
+            padding: 8px 0;
+        }
+    }
+    @include for-mobile-layout {
+        header {
+            border: none;
+        }
+        .nav-header{
+            display: none;
+        }
+    }
+}

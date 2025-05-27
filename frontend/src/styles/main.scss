@@ -1,0 +1,30 @@
+// basics
+@import 'basics/colors';
+@import 'basics/base';
+@import 'basics/typography';
+@import 'basics/variables';
+@import 'basics/mixins';
+@import 'basics/layout';
+@import 'basics/helpers';
+
+// views
+@import 'views/home';
+@import 'views/gig-edit';
+@import 'views/gig-details';
+
+// cmps 
+@import 'cmps/header';
+@import 'cmps/main-header';
+@import 'cmps/search-header';
+@import 'cmps/footer';
+@import 'cmps/hero';
+@import 'cmps/popular';
+@import 'cmps/selling-proposition';
+@import 'cmps/gig-list';
+@import 'cmps/gig-preview';
+
+// util
+// @import "react-image-gallery/styles/scss/image-gallery.scss";
+
+// @import 'views/header';
+// @import 'views/explore';
